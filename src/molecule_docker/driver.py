@@ -189,12 +189,18 @@ class Docker(Driver):
     .. _`CMD`: https://docs.docker.com/engine/reference/builder/#cmd
     """  # noqa
 
+    # Override the module name to point to our package
+    module = "sensu-molecule-docker"
+
     _passed_sanity = False
 
     def __init__(self, config=None):
         """Construct Docker."""
-        super(Docker, self).__init__(config)
+        # Initialize the base class attributes manually to avoid version lookup
+        self._config = config
         self._name = "docker"
+        self._version = "1.0.0"
+        self.module = "sensu-molecule-docker"
 
     @property
     def name(self):
@@ -203,6 +209,10 @@ class Docker(Driver):
     @name.setter
     def name(self, value):
         self._name = value
+
+    @property
+    def version(self):
+        return "1.0.0"
 
     @property
     def login_cmd_template(self):
