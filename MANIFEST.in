@@ -1,0 +1,24 @@
+include README.rst
+include LICENSE
+include requirements.txt
+include pyproject.toml
+include setup.cfg
+include setup.py
+recursive-include src/molecule_docker *.py
+recursive-include src/molecule_docker *.yml
+recursive-include src/molecule_docker *.j2
+recursive-include src/molecule_docker *.json
+recursive-include src/molecule_docker *.py
+recursive-include src/molecule_docker/playbooks *.yml
+recursive-include src/molecule_docker/playbooks *.j2
+recursive-include src/molecule_docker/playbooks/filter_plugins *.py
+recursive-include src/molecule_docker/playbooks/tasks *.yml
+recursive-include src/molecule_docker/cookiecutter *.json
+recursive-include src/molecule_docker/cookiecutter *.yml
+recursive-include src/molecule_docker/cookiecutter *.j2
+recursive-include src/molecule_docker/test *.py
+recursive-include src/molecule_docker/test/scenarios *.yml
+recursive-include src/molecule_docker/test/scenarios *.j2
+recursive-include src/molecule_docker/test/scenarios *.py
+recursive-include molecule *.yml
+recursive-include molecule *.j2

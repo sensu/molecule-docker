@@ -1,13 +1,6 @@
-**********************
-Molecule Docker Plugin
-**********************
-
-.. image:: https://badge.fury.io/py/molecule-docker.svg
-   :target: https://badge.fury.io/py/molecule-docker
-   :alt: PyPI Package
-
-.. image:: https://github.com/ansible-community/molecule-docker/workflows/tox/badge.svg
-   :target: https://github.com/ansible-community/molecule-docker/actions
+**************************
+Sensu Molecule Docker Plugin
+**************************
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/python/black
@@ -17,10 +10,22 @@ Molecule Docker Plugin
    :target: LICENSE
    :alt: Repository License
 
-Molecule Docker Plugin is designed to allow use docker containers for
-provisioning test resources.
+Sensu's fork of the Molecule Docker Plugin, designed to allow use of docker containers for
+provisioning test resources in Ansible Molecule.
 
-Please note that this driver is currently in its early stage of development.
+This is a customized version of the original `ansible-community/molecule-docker` plugin,
+maintained by Sensu for internal use and enhanced functionality.
+
+Installation
+============
+
+Install from source::
+
+    pip install -e .
+
+Or install with dependencies::
+
+    pip install -r requirements.txt
 
 This plugin will function only if you also install `community.docker` ansible
 collection. Keep in mind that this requires newer version of docker python
@@ -36,18 +41,14 @@ python modules). Instead file them on `community.docker <https://github.com/ansi
 Get Involved
 ============
 
-* Join us in the ``#ansible-devtools`` channel on `Libera`_.
-* Join the discussion in `molecule-users Forum`_.
-* Join the community working group by checking the `wiki`_.
-* Want to know about releases, subscribe to `ansible-announce list`_.
-* For the full list of Ansible email Lists, IRC channels see the
-  `communication page`_.
+* Join the Sensu community on `Discord`_.
+* Check out the `Sensu Community Forum`_.
+* Contribute to this project by opening issues and pull requests.
+* For Sensu-specific support, visit the `Sensu Support Portal`_.
 
-.. _`Libera`: https://web.libera.chat/?channel=#ansible-devtools
-.. _`molecule-users Forum`: https://groups.google.com/forum/#!forum/molecule-users
-.. _`wiki`: https://github.com/ansible/community/wiki/Molecule
-.. _`ansible-announce list`: https://groups.google.com/group/ansible-announce
-.. _`communication page`: https://docs.ansible.com/ansible/latest/community/communication.html
+.. _`Discord`: https://discord.gg/sensu
+.. _`Sensu Community Forum`: https://discourse.sensu.io/
+.. _`Sensu Support Portal`: https://support.sensu.io/
 
 .. _faq:
 
