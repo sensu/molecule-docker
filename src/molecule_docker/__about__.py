@@ -1,6 +1,6 @@
-"""Package metadata for sensu-molecule-docker."""
+"""Package metadata for molecule-docker."""
 
-__title__ = "sensu-molecule-docker"
+__title__ = "molecule-docker"
 __version__ = "1.0.0"
 __description__ = "Sensu's fork of Molecule Docker driver for Ansible role testing"
 __author__ = "Sensu"
