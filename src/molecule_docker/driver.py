@@ -196,6 +196,7 @@ class Docker(Driver):
 
     def __init__(self, config=None):
         """Construct Docker."""
+        super(Docker, self).__init__(config)
         # Initialize the base class attributes manually to avoid version lookup
         self._config = config
         self._name = "docker"
